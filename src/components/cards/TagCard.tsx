@@ -9,12 +9,13 @@ import { Badge } from "../ui/badge";
 interface Props {
   _id: string;
   name: string;
-  questions: number;
+  questions?: number;
   showCount?: boolean;
   compact?: boolean;
 }
 
-const TagCard = ({ _id, name, questions, showCount }: Props) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const TagCard = ({ _id, name, questions, showCount, compact }: Props) => {
   const iconClass = getDeviconClassName(name);
 
   return (
