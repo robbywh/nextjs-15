@@ -8,3 +8,34 @@ content-type: application/json
   "username": "johndoe",
   "email": "johndoe@gmail.com"
 }
+###
+GET http://localhost:3000/api/users/676fdd7a5d633b3076e742e1 
+###
+PUT http://localhost:3000/api/users/676fdd7a5d633b3076e742e1 
+content-type: application/json
+
+{
+  "name": "John Doe 4"
+}
+
+###
+DELETE http://localhost:3000/api/users/676fdd7a5d633b3076e742e1
+
+###
+POST http://localhost:3000/api/users/email
+content-type: application/json
+
+{
+  "email": "johndoe@gmail.com"
+}
+###
+GET http://localhost:3000/api/accounts 
+###
+POST http://localhost:3000/api/accounts
+content-type: application/json
+
+{
+  "name": "John Doe",
+  "username": "johndoe",
+  "email": "johndoe@gmail.com"
+}
