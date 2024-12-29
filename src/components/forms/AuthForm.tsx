@@ -25,14 +25,6 @@ import { Input } from "@/components/ui/input";
 import ROUTES from "@/constants/routes";
 import { toast } from "@/hooks/use-toast";
 
-interface ActionResponse {
-  success: boolean;
-  status?: number;
-  error?: {
-    message: string;
-  };
-}
-
 interface AuthFormProps<T extends FieldValues> {
   schema: ZodType<T>;
   defaultValues: T;
